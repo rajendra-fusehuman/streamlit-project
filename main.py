@@ -3,18 +3,6 @@ import pandas as pd
 import numpy as np
 import pickle
 
-# @st.cache(suppress_st_warning=True)
-# def get_fvalue(val):
-#     feature_dict = {"No":1,"Yes":2}
-#     for key,value in feature_dict.items():
-#         if val == key:
-#             return value
-#
-# def get_value(val,my_dict):
-#     for key,value in my_dict.items():
-#         if val == key:
-#             return value
-
 app_mode = st.sidebar.selectbox('Select Page',['Employee Data Entry','Department Data Entry', 'Visualization'])
 
 if 'df_employee' not in st.session_state:
